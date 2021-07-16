@@ -19,3 +19,15 @@ zip -r garbage.zip ./garbage
 ```bash
 curl https://raw.githubusercontent.com/hex22a/file-generator/main/cleanup.sh | bash -s ./garbage
 ```
+
+## build docker image
+
+```bash
+docker build -t docker-testing:TAG .
+```
+
+## run docker container
+
+```bash
+docker run --name redis-docker-performance-testing -d docker-testing:TAG
+```
